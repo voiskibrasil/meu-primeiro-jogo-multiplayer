@@ -4,3 +4,6 @@ ports:
 tasks:
   - before: if [[ -z "$experiment" ]]; then cd playground/1st-proof-of-concept; else cd playground/$experiment; fi
     command: nvm install 13.3.0 && npm install && npm start
+
+image:
+  file: .gitpod.dockerfile
